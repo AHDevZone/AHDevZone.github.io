@@ -1,0 +1,458 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    background-color: #fff; /* Fond blanc pour le contenu */
+    color: #000; /* Texte noir */
+}
+
+p { 
+  margin: 15px 0;
+}
+
+/* Styles pour les liens */
+a {
+    color: #000; /* Couleur du texte en noir */
+}
+
+h3 {
+    color: #fff; /* Texte blanc */
+    font-weight: bold; /* Police en gras */
+    text-align: center; 
+    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
+    padding: 10px;
+}
+
+/* Styles pour l'en-tête */
+header {
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /* Centre verticalement les éléments enfants */
+    justify-content: space-evenly; /* Espacement des éléments enfants */
+    padding: 20px; /* Ajoute un peu d'espacement */
+}
+
+.logo-container {
+    display: flex; /* Utilisation de flexbox */
+}
+
+.logo-container .logo {
+    margin-right: 10px; /* Ajoute une marge à droite pour les espacer */
+}
+
+/* Style pour le séparateur */
+.separator {
+    border: none;
+    height: 2px; /* Épaisseur de la ligne */
+    background: linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A); /* Dégradé de couleurs */
+    margin: 20px 0; /* Marge au-dessus et en dessous du séparateur */
+}
+
+/* Styles pour les logos dans l'en-tête */
+header img {
+    display: inline-block; /* Afficher les logos en ligne */
+    vertical-align: middle; /* Aligner verticalement au milieu */
+    margin-right: 10px; /* Ajouter une marge à droite pour les espacer */
+     width: 100px; /* Largeur souhaitée */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+/* Menu à gauche */
+#menu {
+    background-color: #f5f5f5; /* Fond gris clair pour le menu */
+    padding: 20px;
+    float: left;
+    width: 200px;
+}
+
+/* Styles pour le menu */
+#menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Les colonnes s'adapteront à la taille des icônes */
+    gap: 5px; /* Espacement entre les icônes */
+    justify-content: center; /* Alignement horizontal au centre */
+}
+
+/* Styles pour chaque icône */
+.icon {
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Styles pour les images dans le menu */
+#menu img {
+    width: 70px; /* Ajustez la taille des icônes selon vos besoins */
+    height: auto;
+    vertical-align: middle; /* Alignement vertical au milieu */
+}
+
+/* Styles pour le footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px; /* Ajoute une marge au-dessus du footer */
+    height: 100px; /* Hauteur du footer */
+}
+
+/* Contenu à droite */
+#content {
+    padding: 20px;
+    margin-left: 220px; /* Assure que le contenu ne se superpose pas avec le menu */
+}
+
+#pageTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#pageText {
+    margin-bottom: 20px;
+}
+
+/* Style pour le conteneur de grille */
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Les colonnes auront une largeur minimale de 200px et s'adapteront en fonction de l'espace disponible */
+    grid-gap: 20px; /* Espace entre les éléments de la grille */
+    margin-top: 20px; /* Ajout de marges pour l'espacement */
+    max-width: 1200px; /* Limite la largeur de la grille à 900px */
+    margin: 0 auto; /* Centre la grille horizontalement */
+}
+
+.grid-item {
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style spécifique pour le texte */
+.grid-item p {
+    margin: 0; /* Supprime la marge par défaut du paragraphe */
+}
+
+.learn-more {
+  max-width: 35px;
+  height: auto;
+    margin: 10px;
+}
+
+
+        /* Cube */
+.wrap {
+                margin-top: 150px;
+                perspective: 1000px;
+                perspective-origin: 50% 50%;
+                background-size: 80px 80px;
+                margin-bottom: 100px; /* Ajoute une marge en bas pour éviter que le cube n'empiète */
+            }
+
+            .cube {
+                margin: auto;
+                position: relative;
+                height: 200px;
+                width: 200px;
+                transform-style: preserve-3d;
+            }
+
+                .cube div {
+                    position: absolute;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #fff;
+                    border: solid 1px #eee;
+                    color: #fff;
+                    font: 10px arial;
+                    transition: transform 0.2s ease-in;
+                }
+
+            @keyframes rotate {
+                from {
+                    transform: rotateX(0deg) rotateY(0deg);
+                }
+
+                to {
+                    transform: rotateX(360deg) rotateY(360deg);
+                }
+            }
+
+            .cube, .animation {
+                animation: rotate 20s infinite linear;
+            }
+
+.cube:hover {
+    animation-play-state: paused;
+}
+
+.no-animation {
+    animation: none !important; /* Désactivez l'animation */
+}
+
+
+/* Classes pour les titres ODD */
+
+/* Style pour le titre de la page */
+
+#titleODD {
+    padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
+    color: #fff; /* Texte blanc */
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Police en gras */
+    text-align: center; 
+    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
+}
+
+/* Styles pour chaque ODD */
+.odd1 {
+    background-color: #e5243b;
+}
+
+.odd2 {
+    background-color: #DDA63A;
+}
+
+.odd3 {
+    background-color: #4C9F38;
+}
+
+.odd4 {
+    background-color: #C5192D;
+}
+
+#titleODD.odd5 {
+    background-color: #FF3A21;
+}
+
+.odd6 {
+    background-color: #26BDE2;
+}
+
+.odd7 {
+    background-color: #FCC30B;
+}
+
+.odd8 {
+    background-color: #A21942;
+}
+
+.odd9 {
+    background-color: #FD6925;
+}
+
+.odd10 {
+    background-color: #DD1367;
+}
+
+.odd11 {
+    background-color: #FD9D24;
+}
+
+.odd12 {
+    background-color: #BF8B2E;
+}
+
+.odd13 {
+    background-color: #3F7E44;
+}
+
+.odd14 {
+    background-color: #0A97D9;
+}
+
+.odd15 {
+    background-color: #56C02B;
+}
+
+.odd16 {
+    background-color: #00689D;
+}
+
+.odd17 {
+    background-color: #19486A;
+}
+
+/* Styles pour les boutons avec les couleurs des ODD */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    color:white;
+    font-size: 14px;
+}
+
+.button a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Effet hover pour tous les boutons */
+.button:hover {
+    filter: brightness(85%); /* Réduit la luminosité au survol à 85% */
+}
+
+/* Boutons pour chaque ODD */
+.button.odd1 {
+    background-color: #e5243b; /* Couleur pour l'ODD 1 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd2 {
+    background-color: #DDA63A; /* Couleur pour l'ODD 2 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd3 {
+    background-color: #4C9F38; /* Couleur pour l'ODD 3 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd4 {
+    background-color: #C5192D; /* Couleur pour l'ODD 4 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd5 {
+    background-color: #FF3A21; /* Couleur pour l'ODD 5 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd6 {
+    background-color: #26BDE2; /* Couleur pour l'ODD 6 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd7 {
+    background-color: #FCC30B; /* Couleur pour l'ODD 7 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd8 {
+    background-color: #A21942; /* Couleur pour l'ODD 8 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd9 {
+    background-color: #FD6925; /* Couleur pour l'ODD 9 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd10 {
+    background-color: #DD1367; /* Couleur pour l'ODD 10 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd11 {
+    background-color: #FD9D24; /* Couleur pour l'ODD 11 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd12 {
+    background-color: #BF8B2E; /* Couleur pour l'ODD 12 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd13 {
+    background-color: #3F7E44; /* Couleur pour l'ODD 13 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd14 {
+    background-color: #0A97D9; /* Couleur pour l'ODD 14 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd15 {
+    background-color: #56C02B; /* Couleur pour l'ODD 15 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd16 {
+    background-color: #00689D; /* Couleur pour l'ODD 16 */
+    color: #fff; /* Texte blanc */
+}
+
+.button.odd17 {
+    background-color: #19486A; /* Couleur pour l'ODD 17 */
+    color: #fff; /* Texte blanc */
+}
+
+/* Styles pour le bouton avec fond blanc et bordure dégradée */
+.button-white {
+    display: inline-block;
+    padding: 10px 20px;
+background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A) border-box;
+      color: #000;
+      border: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+/* Texte est visible même sur le fond blanc */
+.button-white:hover {
+    color: #555; /* Texte blanc au survol */
+}
+
+/* Responsive */
+
+/* Media Queries pour les appareils mobiles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajustement de la taille de police pour les appareils mobiles */
+    }
+
+    header {
+        flex-direction: column; /* Mettre les éléments de l'en-tête en colonne pour les appareils mobiles */
+        align-items: center; /* Centrer horizontalement les éléments de l'en-tête */
+    }
+
+    .logo-container {
+        margin-bottom: 20px; /* Ajouter une marge en bas pour séparer le logo du menu */
+    }
+
+    #menu {
+        width: 100%; /* Largeur du menu sur toute la largeur de l'écran */
+        margin-left: 0; /* Supprimer la marge gauche */
+        margin-bottom: 20px; /* Rajout d'une marge en bas */
+        padding: 10px; /* Réduire l'espacement entre les icônes du menu */
+        display: flex;
+        flex-wrap: wrap; /* Les icônes peuvent être enveloppées sur plusieurs lignes */
+        justify-content: center; /* Centrer les icônes horizontalement */
+    }
+
+    .icon {
+        flex: 0 0 25%; /* Afficher 4 icônes par ligne (25% de la largeur du menu) */
+    }
+
+    #content {
+        margin-left: 0; /* Supprimer la marge gauche */
+        padding: 10px; /* Réduire l'espacement du contenu */
+        margin-bottom: 50px;
+    }
+
+    .wrap {
+        margin-top: 100px; /* Réduire la marge supérieure pour le cube */
+    }
+}
+
+/* Media Queries pour les tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Media query pour les écrans de taille inférieure à 600px (mobile) */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 100%; /* Une seule colonne prenant 100% de la largeur */
+        padding: 0 10px; /* Ajout de marges latérales pour l'espacement sur les côtés */
+    }
+}
