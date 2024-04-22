@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-
+import WebGL from 'three/addons/capabilities/WebGL.js';
 
 var canvas = document.getElementById("cube")
 const renderer = new THREE.WebGLRenderer({canvas: canvas});
@@ -39,4 +39,9 @@ function animate() {
 	renderer.render( scene, camera );
 }
 
-animate();
+if ( WebGL.isWebGLAvailable() ) {
+	animate();
+} else {
+	const warning = WebGL.getWebGLErrorMessage();
+	canvas.appendChild( warning );
+}
