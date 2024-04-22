@@ -13,76 +13,6 @@
 }
 }
 </script>
-<style>
-        /* Cube */
-.cube > div:first-child {
-  -webkit-transform: rotateX(90deg) translateZ(100px);
-  -moz-transform: rotateX(90deg) translateZ(100px);
-  -ms-transform: rotateX(90deg) translateZ(100px);
-  -o-transform: rotateX(90deg) translateZ(100px);
-  transform: rotateX(90deg) translateZ(100px);
-background-image: url("ODD1/face1.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-.cube > div:nth-child(2) {
-  -webkit-transform: translateZ(100px);
-  -moz-transform: translateZ(100px);
-  -ms-transform: translateZ(100px);
-  -o-transform: translateZ(100px);
-  transform: translateZ(100px);
-  background-image: url("ODD1/face2.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-.cube > div:nth-child(3) {
-  -webkit-transform: rotateY(90deg) translateZ(100px);
-  -moz-transform: rotateY(90deg) translateZ(100px);
-  -ms-transform: rotateY(90deg) translateZ(100px);
-  -o-transform: rotateY(90deg) translateZ(100px);
-  transform: rotateY(90deg) translateZ(100px);
-  background-image: url("ODD1/face3.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-.cube > div:nth-child(4) {
-  -webkit-transform: rotateY(180deg) translateZ(100px);
-  -moz-transform: rotateY(180deg) translateZ(100px);
-  -ms-transform: rotateY(180deg) translateZ(100px);
-  -o-transform: rotateY(180deg) translateZ(100px);
-  transform: rotateY(180deg) translateZ(100px);
-  background-image: url("ODD1/face4.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-.cube > div:nth-child(5) {
-  -webkit-transform: rotateY(-90deg) translateZ(100px);
-  -moz-transform: rotateY(-90deg) translateZ(100px);
-  -ms-transform: rotateY(-90deg) translateZ(100px);
-  -o-transform: rotateY(-90deg) translateZ(100px);
-  transform: rotateY(-90deg) translateZ(100px);
-  background-image: url("ODD1/face5.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-.cube > div:nth-child(6) {
-  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-  -ms-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-  -o-transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-  transform: rotateX(-90deg) rotate(180deg) translateZ(100px);
-  background-image: url("ODD1/face6.png");
-background-size: cover;
-  outline: 1px solid #eee; }
-
-@media (max-width: 640px) {
-  .viewport {
-    -webkit-transform: scale(0.6, 0.6);
-    -moz-transform: scale(0.6, 0.6);
-    -ms-transform: scale(0.6, 0.6);
-    -o-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6); } }
-    </style>
 </head>
 <body>
     <!-- Contenu à droite -->
@@ -128,7 +58,7 @@ background-size: cover;
     
     
     <script>
-import * as THREE from 'three';
+import as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 var canvas = document.getElementById("cube")
