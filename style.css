@@ -271,7 +271,7 @@ animation: rotateCube 20s infinite linear;}
     background-color: #C5192D;
 }
 
-#titleODD.odd5 {
+.odd5 {
     background-color: #FF3A21;
 }
 
