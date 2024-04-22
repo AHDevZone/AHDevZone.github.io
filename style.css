@@ -124,6 +124,7 @@ footer {
     margin-top: 20px; /* Ajout de marges pour l'espacement */
     max-width: 1200px; /* Limite la largeur de la grille à 900px */
     margin: 0 auto; /* Centre la grille horizontalement */
+    grid-auto-columns: 1fr; /* Toutes les colonnes auront la même largeur */
 }
 
 .grid-item {
@@ -142,103 +143,6 @@ footer {
   height: auto;
     margin: 10px;
 }
-
-
-        /* Cube */
- #wrapper {
-  padding-top: 3%;
-        padding-bottom: 3%;}
-
-.viewport {
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
-  perspective: 800px;
-  -webkit-perspective-origin: 50% 200px;
-  -moz-perspective-origin: 50% 200px;
-  -ms-perspective-origin: 50% 200px;
-  -o-perspective-origin: 50% 200px;
-  perspective-origin: 50% 200px;
-  -webkit-transform: scale(0.8, 0.8);
-  -moz-transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  -o-transform: scale(0.8, 0.8);
-  transform: scale(0.8, 0.8);
-}
-
-.cube {
-  position: relative;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateX(136deg) rotateY(1122deg);
-  -moz-transform: rotateX(136deg) rotateY(1122deg);
-  -ms-transform: rotateX(136deg) rotateY(1122deg);
-  -o-transform: rotateX(136deg) rotateY(1122deg);
-  transform: rotateX(136deg) rotateY(1122deg);
-animation: rotateCube 20s infinite linear;}
-
-@keyframes rotateCube {
-  from {
-                    transform: rotateX(0deg) rotateY(0deg);
-                }
-
-                to {
-                    transform: rotateX(360deg) rotateY(360deg);
-  }
-}
-.cube:hover {
-  animation: none;
-}
-
-.cube > div {
-  overflow: hidden;
-  position: absolute;
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  -webkit-touch-callout: none;
-  -moz-touch-callout: none;
-  -ms-touch-callout: none;
-  -o-touch-callout: none;
-  touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;}
-
-.cube > div > div.cube-image {
-  width: 200px;
-  height: 200px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-  line-height: 200px;
-  font-size: 80px;
-  text-align: center;
-  color: #000;
-  -webkit-transition: color 600ms;
-  -moz-transition: color 600ms;
-  -ms-transition: color 600ms;
-  -o-transition: color 600ms;
-  transition: color 600ms;}
-  .cube > div > div.cube-image.active {
-    color: red; }
-
-.cube > div:hover {
-  cursor: grabbing; }
-
-.cube > div:active {
-  cursor: grabbing; }
 
 
 /* Classes pour les titres ODD */
@@ -322,6 +226,41 @@ animation: rotateCube 20s infinite linear;}
 .odd17 {
     background-color: #19486A;
 }
+
+.aideinfos {
+    padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
+    color: #000; /* Texte noir */
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Police en gras */
+    text-align: center; 
+    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A) border-box;
+      border: 2px solid transparent;
+}
+
+.aideinfosh3 {
+    position: relative; /* Position relative pour les éléments enfants */
+    padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
+    color: #000!important; /* Texte noir */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Police en gras */
+    text-align: left; 
+    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
+}
+
+.aideinfosh3::after {
+    content: ''; /* Contenu vide pour le pseudo-élément */
+    position: absolute; /* Position absolue par rapport au titre */
+    bottom: 0; /* Alignez le pseudo-élément en bas */
+    left: 0; /* Alignez le pseudo-élément à gauche */
+    width: 20%; /* Largeur égale à celle du titre */
+    height: 3px; /* Hauteur du soulignement */
+    background: linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A); /* Dégradé pour le soulignement */
+}
+```
+
+Avec cette modification, chaque titre de la classe `.aideinfos` aura un soulignement en dégradé.
 
 /* Styles pour les boutons avec les couleurs des ODD */
 .button {
