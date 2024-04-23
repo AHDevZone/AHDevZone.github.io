@@ -9,7 +9,7 @@
 body {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 12px;
-    background-color: #fff; /* Fond blanc pour le contenu */
+    background-color: #f5f5f5; /* Fond gris clair pour le contenu */
     color: #000; /* Texte noir */
 }
 
@@ -65,7 +65,7 @@ header img {
 
 /* Menu à gauche */
 #menu {
-    background-color: #f5f5f5; /* Fond gris clair pour le menu */
+    background-color: #fff; /* Fond blanc pour le menu */
     padding: 20px;
     float: left;
     width: 200px;
@@ -104,7 +104,7 @@ canvas {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     margin-top: 20px; /* Ajoute une marge au-dessus du footer */
     height: 100px; /* Hauteur du footer */
 }
@@ -138,7 +138,7 @@ padding: 0px 20px 20px 20px;
 }
 
 .grid-item {
-    border: 1px solid #f0f0f0;
+    border: 1px solid #eee;
     padding: 20px;
     text-align: center;
 }
