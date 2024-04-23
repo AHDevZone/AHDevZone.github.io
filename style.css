@@ -17,14 +17,6 @@ p {
   margin: 15px 0;
 }
 
-canvas {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 /* Styles pour les liens */
 a {
     color: #000; /* Couleur du texte en noir */
@@ -85,6 +77,15 @@ header img {
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Les colonnes s'adapteront à la taille des icônes */
     gap: 5px; /* Espacement entre les icônes */
     justify-content: center; /* Alignement horizontal au centre */
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
 }
 
 /* Styles pour chaque icône */
@@ -247,6 +248,18 @@ footer {
       border: 2px solid transparent;
 }
 
+.credits {
+    padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
+    color: #000; /* Texte noir */
+    font-size: 14px; /* Taille de la police */
+    font-weight: bold; /* Police en gras */
+    text-align: center; 
+    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
+    background: linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A) border-box;
+      border: 2px solid transparent;
+}
+
 .aideinfosh3 {
     position: relative; /* Position relative pour les éléments enfants */
     padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
@@ -266,9 +279,6 @@ footer {
     height: 3px; /* Hauteur du soulignement */
     background: linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A); /* Dégradé pour le soulignement */
 }
-```
-
-Avec cette modification, chaque titre de la classe `.aideinfos` aura un soulignement en dégradé.
 
 /* Styles pour les boutons avec les couleurs des ODD */
 .button {
@@ -293,8 +303,8 @@ Avec cette modification, chaque titre de la classe `.aideinfos` aura un souligne
 
 /* Boutons pour chaque ODD */
 .button.odd1 {
-    background-color: #e5243b; /* Couleur pour l'ODD 1 */
-    color: #fff; /* Texte blanc */
+    background-color: #e5243b;
+    color: #fff; 
 }
 
 .button.odd2 {
