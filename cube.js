@@ -8,7 +8,7 @@ renderer.setSize( canvas.width, canvas.height );
 renderer.setClearColor(0xffffff, 0);
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 45, canvas.width / canvas.height, 1, 10000 );
+const camera = new THREE.PerspectiveCamera( 60, canvas.width / canvas.height, 1, 10000 );
 const controls = new OrbitControls( camera, renderer.domElement );
 
 const geometry = new THREE.BoxGeometry( 2, 2, 2 );

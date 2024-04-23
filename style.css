@@ -111,7 +111,8 @@ footer {
 
 /* Contenu à droite */
 #content {
-    padding: 20px;
+    /* haut | droit | bas | gauche */
+padding: 0px 20px 20px 20px;
     margin-left: 220px; /* Assure que le contenu ne se superpose pas avec le menu */
 }
 
@@ -236,17 +237,10 @@ footer {
     background-color: #19486A;
 }
 
-.aideinfos {
-    padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
-    color: #000; /* Texte noir */
-    font-size: 24px; /* Taille de la police */
-    font-weight: bold; /* Police en gras */
-    text-align: center; 
-    margin-bottom: 10px; /* Marge en bas pour séparer du contenu suivant */
-    background: linear-gradient(#fff, #fff) padding-box,
-        linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A) border-box;
-      border: 2px solid transparent;
-}
+.page18 {
+background-color:#96526B;
+
+background-blend-mode: multiply;}
 
 .credits {
     padding: 10px; /* Ajoutez un peu de rembourrage pour aérer le texte */
