@@ -89,7 +89,7 @@ header img {
 
 canvas {
     max-width: 100%; /* Le canvas ne dépassera pas la largeur de son conteneur */
-    height: auto; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
+    height: auto!important; /* La hauteur s'ajustera automatiquement pour conserver les proportions */
     display: block;
     margin: 0 auto; /* Centre le canvas horizontalement */
     padding: 0; /* Supprime les marges internes */
