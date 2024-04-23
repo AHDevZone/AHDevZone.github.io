@@ -55,6 +55,13 @@ header {
     margin-bottom: 20px; 
 }
 
+/* Media query pour cibler les appareils mobiles */
+@media (max-width: 600px) {
+    .separator {
+        margin-bottom: 0; /* Annule le margin en bas sur les appareils mobiles */
+    }
+}
+
 /* Styles pour les logos dans l'en-tête */
 header img {
     display: inline-block; /* Afficher les logos en ligne */
@@ -406,7 +413,7 @@ background: linear-gradient(#fff, #fff) padding-box,
 /* Responsive */
 
 /* Media Queries pour les appareils mobiles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     body {
         font-size: 14px; /* Ajustement de la taille de police pour les appareils mobiles */
     }
@@ -424,7 +431,6 @@ background: linear-gradient(#fff, #fff) padding-box,
         width: 100%; /* Largeur du menu sur toute la largeur de l'écran */
         margin-left: 0; /* Supprimer la marge gauche */
         margin-bottom: 20px; /* Rajout d'une marge en bas */
-        padding: 10px; /* Réduire l'espacement entre les icônes du menu */
         display: flex;
         flex-wrap: wrap; /* Les icônes peuvent être enveloppées sur plusieurs lignes */
         justify-content: center; /* Centrer les icônes horizontalement */
@@ -443,6 +449,19 @@ background: linear-gradient(#fff, #fff) padding-box,
     .wrap {
         margin-top: 100px; /* Réduire la marge supérieure pour le cube */
     }
+    
+    h1 {
+        text-align:center;
+        font-size: 20px;
+    }
+    
+    h3 {
+    font-size: 16px;
+}
+    
+    #titleODD {
+font-size: 14px;
+}
 }
 
 /* Media Queries pour les tablettes */
