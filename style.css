@@ -9,8 +9,8 @@
 body {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 12px;
-    background-color: #f5f5f5; /* Fond gris clair pour le contenu */
-    color: #000; /* Texte noir */
+    background-color: #f5f5f5; 
+    color: #000; 
 }
 
 p { 
@@ -36,6 +36,7 @@ header {
     align-items: center; /* Centre verticalement les éléments enfants */
     justify-content: space-evenly; /* Espacement des éléments enfants */
     padding: 20px; /* Ajoute un peu d'espacement */
+    background-color: white;
 }
 
 .logo-container {
@@ -51,7 +52,7 @@ header {
     border: none;
     height: 2px; /* Épaisseur de la ligne */
     background: linear-gradient(to right, #e5243b, #DDA63A, #4C9F38, #C5192D, #FF3A21, #26BDE2, #FCC30B, #A21942, #FD6925, #DD1367, #FD9D24, #BF8B2E, #3F7E44, #0A97D9, #56C02B, #00689D, #19486A); /* Dégradé de couleurs */
-    margin: 20px 0; /* Marge au-dessus et en dessous du séparateur */
+    margin-bottom: 20px; 
 }
 
 /* Styles pour les logos dans l'en-tête */
@@ -114,6 +115,7 @@ footer {
     /* haut | droit | bas | gauche */
 padding: 0px 20px 20px 20px;
     margin-left: 220px; /* Assure que le contenu ne se superpose pas avec le menu */
+    background-color: #f5f5f5;
 }
 
 #pageTitle {
